@@ -24,7 +24,7 @@ var signInWidgetConfig = {
     },
     baseUrl: "https://dev-582779.okta.com",
     clientId: "0oat9w9814fG2ryQD356",
-    redirectUri: 'http://localhost:8000/',
+    redirectUri: 'https://wensymfony.herokuapp.com/',
     authParams: {
         issuer: 'https://dev-582779.okta.com/oauth2/default',
         responseType: ['id_token', 'token'],
@@ -93,7 +93,7 @@ function widgetSuccessCallback(res) {
         console.log("Logged in to Okta and issued token:");
         console.log(token);
         console.log("Reload this page to start over.");
-        window.location='/';
+        window.location='https://wensymfony.herokuapp.com/';
     }
 }
 
